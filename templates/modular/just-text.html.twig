@@ -1,0 +1,6 @@
+{% if (page.header.class is not none) %}
+<section class="modular-just-text {{ page.header.class }} bg-gray">
+{% endif %}
+    {{ content|raw }}{% if (page.header.class is not none) %}
+</section>
+{% endif %}

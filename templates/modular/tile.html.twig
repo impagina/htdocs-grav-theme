@@ -1,0 +1,23 @@
+{% set image = page.media.images|first %}
+<section class="section modular-tile {{ page.header.class}} bg-gray">
+    <section class="container {{ grid_size }}">
+        <div class="tile">
+            <div class="tile-icon">
+                {% if (not page.header.fa_icon is none) %}
+                <i class="fa {{ page.header.fa_icon }}" aria-hidden="true"></i>
+                {% else %}
+                {{ image.html|raw }}
+                {% endif %}
+            </div>
+            <div class="tile-content">
+                <p class="tile-title">{{ page.header.title }}</p>
+                <p class="tile-subtitle">{{ content|raw }}</p>
+            </div>
+            <!--
+            <div class="tile-action">
+                <button class="btn btn-primary">Join</button>
+            </div>
+            -->
+        </div>
+    </section>
+</section>

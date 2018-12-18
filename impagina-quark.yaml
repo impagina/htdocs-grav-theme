@@ -1,0 +1,12 @@
+streams:
+ schemes:
+   theme:
+     type: ReadOnlyStream
+     prefixes:
+       '':
+         - user/themes/impagina-quark
+         - user/themes/quark
+custom_logo:
+  - name: 'impagina.png'
+custom_logo_mobile:
+  - name: 'impagina.png'

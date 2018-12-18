@@ -1,0 +1,8 @@
+name: Impagina (Quark)
+version: 1.0.0
+description: "impagina.org site, Extending Quark"
+icon: crosshairs
+author:
+  name: ale rimoldi
+  email: ale@graphicslab.org
+  url: http://graphicslab.org

@@ -1,0 +1,11 @@
+<section class="section {{ page.header.class }} bg-gray">
+<section class="container">
+<div class="columns">
+{% for module in page.collection() %}
+    <div class="col-3 col-md-6 col-sm-1">
+    {{ module.content|raw }}
+    </div>
+{% endfor %}
+</div>
+</section>
+</section>
