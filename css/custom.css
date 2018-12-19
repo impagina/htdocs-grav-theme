@@ -83,6 +83,15 @@ ul.unstyled {
   font-size: 0.7rem;
 }
 
+#footer .license {
+  font-size: 0.7rem;
+}
+
+#footer .license img {
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
 #footer a:hover {
   color: #28a6de;
   text-decoration:none;
