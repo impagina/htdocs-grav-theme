@@ -31,6 +31,15 @@ ul.unstyled {
   list-style: none;
 }
 
+#page-wrapper {
+    background-color:#f8f9fa;
+}
+#start {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #header {
   background-color: #082532;
   border-color: #030e13;
