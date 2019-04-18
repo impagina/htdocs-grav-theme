@@ -3,6 +3,7 @@
 {% else %}
     {% set hero_link_start = page.header.hero_link_start %}
 {% endif %}
+{% if page.header.hero_image_block is null %}
 <section id="{{ id }}" class="section modular-hero hero {{ page.header.hero_classes }} {{ page.header.background.parallax ? 'parallax' : '' }}" {% if hero_image %}style="background-image: url({{ hero_image.url }});"{% endif %}>
     <div class="image-overlay"></div>
     <section class="container {{ grid_size }}" style="text-align: {{ page.header.hero_align|default('center') }}">
@@ -12,3 +13,16 @@
     <i id="to-start" class="pulse fa fa-angle-down"></i>
     {% endif %}
 </section>
+{% else %}
+<section id="{{ id }}" class="section modular-hero hero block-hero  {{ page.header.hero_classes }}" >
+    {% if hero_image %}
+    <p><img src="{{ hero_image.url }}"></p>
+    {% endif %}
+    <section class="container {{ grid_size }}" style="text-align: {{ page.header.hero_align|default('center') }}">
+        {{ content|raw }}
+    </section>
+    {% if (hero_link_start) %}
+    <i id="to-start" class="pulse fa fa-angle-down"></i>
+    {% endif %}
+</section>
+{% endif %}

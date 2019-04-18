@@ -126,6 +126,12 @@ ul.unstyled {
   font-size: 1.2rem;
 }
 
+.block-hero {
+    display: block;
+    text-align:center;
+    padding-top: 0;
+}
+
 .white-text h1, .white-text h2, .white-text h3, .white-text p,
 .white-text a
 {
@@ -206,4 +212,8 @@ section.news.bg-gray {
 .circle-button {
   border: 3px solid #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+img.showcase-preview {
+    max-width:200px;
 }
